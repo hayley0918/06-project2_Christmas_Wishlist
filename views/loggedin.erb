@@ -1,0 +1,16 @@
+
+
+<div class = "index">
+    <div class = "image"><img src="images/christmas2016-012 1.svg"></div>
+
+    <div class = "index-text">
+        <h4>logged in as <%= user['email']%></h4>
+        <p>Start posting the items!</p>
+        <form action="/mylist">
+            <button class="red btn-logged" >My Wishlist</button>
+        </form>
+        <form action="/items/new">
+            <button class="blue btn-logged" >Post the item</button>
+        </form>
+    </div>
+</div>

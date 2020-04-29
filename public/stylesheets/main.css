@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #F2F4F8;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto 0;
+}
+
+.app-title{
+    display: inline;
+    color: #001F4D;
+}
+ button {
+    box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
+    border-radius: 6px;
+    padding: 8px 24px;
+    color: white;
+    text-align: center;
+ }
+
+.buttons{
+    float:right; 
+    margin-top: 8px;
+}
+
+.login-btn{
+    background-color: #FF001E;
+}
+
+.signup-btn{
+    background-color: #03247A;
+    
+}
+
+.red {
+    background-color: #FF001E;
+}
+
+.blue {
+    background-color: #03247A;
+}
+
+
+
+.index{
+    background-color: #fff;
+    padding-bottom:24px;
+    margin: 20px 0 40px;
+    border-radius: 10px;
+    clear: both;
+    box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
+}
+
+.index .image img{
+    width: 100%;
+}
+
+.index-text{
+    text-align: center;
+    width: 68%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color:  #001F4D;
+    text-align: left;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 24px 0;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 12px;
+}
+
+.login{
+    width: 300px;
+    height: 350px;
+    margin: 30px auto;
+
+    background: #FFFFFF;
+    /* Long shadow */
+    box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
+    border-radius: 10px;
+    padding: 0 24px;
+}
+
+.login h3{
+    padding: 35px;
+    text-align: center;
+    border-bottom: solid 0.5px grey;
+}
+
+.login label{
+    display: block;
+    margin: 10px 0;
+}
+
+.login input{
+    margin: 0;
+    padding: 8px 4%;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #C0C0C0;
+}
+
+.login button{
+    display: block;
+    margin: 20px 70px;
+    background-color: #FF001E;
+}
+
+.login form{
+    display: grid;
+}
+
+.mylist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.mylist form{
+    display: inline;
+}
+
+h2, h3{
+    color: #001F4D;
+}
+
+.new .input{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    display: grid;
+    box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+.new .input input, label{
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.new .input button{
+    background-color: #03247A;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn-logged {
+    width: 60%;
+    margin-bottom: 8px;
+}
+
+.loggedin img{
+    width: 800px;
+    height: 400px;
+}
+
+.mylist img{
+    width: 100px;
+    height: 100px;
+}
+
+.mylist p{
+    font-size: 13px;
+}
+
+
+
+.mylist button{
+    color: black;
+    border-radius: 0px;
+    padding: 5px;
+    box-shadow: none;
+}

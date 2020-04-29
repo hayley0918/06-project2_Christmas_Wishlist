@@ -1,0 +1,26 @@
+<div class= "edit">
+
+    <h2>Update info</h2>
+
+    <div class = "inputs">
+        <form action="/items" method="post">
+            <input type="hidden" name="_method" value="patch">
+
+            <input type="hidden" name="id" value="<%= item["id"] %>">
+
+            <label for="">name</label>
+            <input name="name" type="text" value="<%= item["name"] %>">
+
+            <label for="">image url</label>
+            <input name="image_url" type="text" value="<%= item["image_url"] %>">
+
+            <label for="">price</label>
+            <input name="price" type="text" value="<%= item["price"] %>">
+
+            <label for="">reason</label>
+            <input name="reason" type="text" value="<%= item["reason"] %>">
+
+            <button>update</button>
+        </form>
+    </div>
+</div>

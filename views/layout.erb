@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Christmas Wishlist</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class = "app-title">Christmas Wishlist</h1>
+
+    <div class = "buttons">
+      <% if logged_in? %>
+        <form action="/logout" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <button class = "logout-btn blue">logout</button>
+        </form>
+      <% else %>
+        <form action = "/login" method = "get">
+          <button class = "login-btn">login</button>
+          <button class = "signup-btn">sign up</button>
+        </form>
+    <% end %>
+
+    </div>
+
+    <%= yield %>
+  </div>
+
+  <footer><div>&copy; Hayley 2020 CRUD App project</div></footer>
+</body>
+</html>
