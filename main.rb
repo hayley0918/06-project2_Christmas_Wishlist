@@ -98,4 +98,13 @@ delete '/logout' do
 end
 
 
+get '/signup' do 
+  erb :signup
+end
 
+post '/signup' do 
+  create_user(params[:email], params[:password])
+  user = find_one_user_by_email( params[:email] )
+  session[:user_id] = user['id']
+  redirect '/loggedin'
+end

@@ -28,6 +28,8 @@ body{
 .buttons{
     float:right; 
     margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .login-btn{
@@ -182,10 +184,10 @@ h2, h3{
 }
 
 
-
 .mylist button{
     color: black;
     border-radius: 0px;
     padding: 5px;
     box-shadow: none;
 }
+
