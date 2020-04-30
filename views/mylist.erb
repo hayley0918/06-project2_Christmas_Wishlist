@@ -1,11 +1,14 @@
 <h3>My Wishlist</h3>
 
 <div class = "mylist">
+    <% if items.count == 0 %> 
+        <p>There is no item in your Wishlist</p>
+    <% else %>
         <% items.each do |item| %>
             <div>
                 <img src="<%= item['image_url'] %>">
                     <p><%= item['name'] %></p>
-                    <p><%= item['price'] %></p>
+                    <p>$<%= item['price'] %></p>
                     <p><%= item['reason'] %></p>
                     <form action="/items/<%= item['id'] %>/edit"><button>edit</button></form>
                     <form action="/items" method ="post">
@@ -15,4 +18,5 @@
                     </form>
             </div>
         <% end %>
+     <% end %>
 </div>
