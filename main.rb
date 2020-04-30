@@ -109,16 +109,16 @@ post '/signup' do
   redirect '/loggedin'
 end
 
-# making public page 
-get '/mylist/:id/public' do 
-  user = find_one_user_by_id(params[:id])
-  items = find_all_items_by_user_id(params[:id])
+# # making public page 
+# get '/mylist/:id/public' do 
+#   user = find_one_user_by_id(params[:id])
+#   items = find_all_items_by_user_id(params[:id])
 
-  # guard 
-  if user["public"] 
-    erb :mylist, locals:{items: items, user: user}
-  else
-    redirect '/'
-  end
+#   # guard 
+#   if user["public"] 
+#     erb :mylist, locals:{items: items, user: user}
+#   else
+#     redirect '/'
+#   end
  
-end
+# end
