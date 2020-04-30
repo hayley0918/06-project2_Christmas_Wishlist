@@ -1,18 +1,18 @@
 <h3>My Wishlist</h3>
 
 <div class = "mylist">
-    <% items.each do |item| %>
-        <div>
-            <img src="<%= item['image_url'] %>">
-                <p><%= item['name'] %></p>
-                <p><%= item['price'] %></p>
-                <p><%= item['reason'] %></p>
-                <form action="/items/<%= item['id'] %>/edit"><button>edit</button></form>
-                <form action="/items" method ="post">
-                    <input type="hidden" name="id" value= "<%= item["id"] %>">
-                    <input type="hidden" name="_method" value="delete">
-                    <button>delete</button>
-                </form>
-        </div>
-    <% end %>
+        <% items.each do |item| %>
+            <div>
+                <img src="<%= item['image_url'] %>">
+                    <p><%= item['name'] %></p>
+                    <p><%= item['price'] %></p>
+                    <p><%= item['reason'] %></p>
+                    <form action="/items/<%= item['id'] %>/edit"><button>edit</button></form>
+                    <form action="/items" method ="post">
+                        <input type="hidden" name="id" value= "<%= item["id"] %>">
+                        <input type="hidden" name="_method" value="delete">
+                        <button>delete</button>
+                    </form>
+            </div>
+        <% end %>
 </div>

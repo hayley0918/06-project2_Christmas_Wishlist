@@ -22,3 +22,6 @@ alter table items add column user_id integer;
 
 
 digest dinasour
+
+
+alter table users add column public boolean;

@@ -1,7 +1,7 @@
 require 'sinatra'
-require 'sinatra/reloader' 
+require 'sinatra/reloader' if development?
 require 'pg' 
-require 'pry'
+require 'pry' if development?
 
 require_relative 'models/user'
 require_relative 'models/item'
@@ -107,4 +107,18 @@ post '/signup' do
   user = find_one_user_by_email( params[:email] )
   session[:user_id] = user['id']
   redirect '/loggedin'
+end
+
+# making public page 
+get '/mylist/:id/public' do 
+  user = find_one_user_by_id(params[:id])
+  items = find_all_items_by_user_id(params[:id])
+
+  # guard 
+  if user["public"] 
+    erb :mylist, locals:{items: items, user: user}
+  else
+    redirect '/'
+  end
+ 
 end

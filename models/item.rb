@@ -1,5 +1,5 @@
 def run_sql(sql)
-    conn = PG.connect(dbname: 'wishlist')
+    conn = PG.connect(ENV['DATABASE_URL'] || {dbname: 'wishlist'})
     records = conn.exec(sql)
     conn.close
     records
