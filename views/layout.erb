@@ -14,6 +14,9 @@
 
     <div class = "buttons">
       <% if logged_in? %>
+        <form action="/items/new">
+          <button class="login-btn">post</button>
+        </form>
         <form action="/logout" method="post">
           <input type="hidden" name="_method" value="delete">
           <button class = "logout-btn blue">logout</button>
