@@ -7,6 +7,13 @@ body{
     background: #F2F4F8;
     margin: 0;
 }
+.wrapper {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+}
 
 .container {
     width: 80%;
@@ -59,7 +66,7 @@ a:link {
 .index{
     background-color: #fff;
     padding-bottom:24px;
-    margin: 20px 0 40px;
+    margin: 20px 0 0;
     border-radius: 10px;
     clear: both;
     box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
@@ -83,6 +90,7 @@ footer{
     bottom: 0;
     width: 100%;
     padding: 24px 0;
+    position: absolute;
 }
 
 footer div {
@@ -93,17 +101,17 @@ footer div {
 
 .login{
     width: 300px;
-    height: 350px;
+    /*height: 350px;*/
     margin: 30px auto;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
     border-radius: 10px;
-    padding: 0 24px;
+    padding: 24px;
 }
 
 .login h3{
-    padding: 35px;
+    padding:0 35px 35px; 
     text-align: center;
     border-bottom: solid 0.5px grey;
 }
@@ -119,11 +127,13 @@ footer div {
     width: 100%;
     border-radius: 6px;
     border: 1px solid #C0C0C0;
+
 }
 
 .login button{
     display: block;
-    margin: 20px 70px;
+    width: 60%;
+    margin: 20px auto;
     background-color: #FF001E;
 }
 
@@ -200,9 +210,25 @@ h2, h3{
     font-size: 20px;
     color: #001F4D;
 }
+.mylist .card p:nth-child(2) {
+    margin-bottom:0;
+}
+
+.mylist .card p:nth-child(3) {
+    margin-top:0;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
+    border-radius: 10px;
+    padding: 24px;
+}
+
 
 .edit{
     width: 400px;
-    height: 500px;
 }
+
+
 
