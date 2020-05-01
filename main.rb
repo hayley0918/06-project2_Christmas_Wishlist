@@ -22,6 +22,7 @@ end
 post '/login' do
   user = find_one_user_by_email( params[:email] )
 
+
   if user && BCrypt::Password.new(user["password_digest"]) == params[:password]
     session[:user_id] = user['id']
     redirect "/loggedin"
@@ -103,10 +104,14 @@ get '/signup' do
 end
 
 post '/signup' do 
-  create_user(params[:email], params[:password])
-  user = find_one_user_by_email( params[:email] )
-  session[:user_id] = user['id']
-  redirect '/loggedin'
+  if params[:email] != "" && params[:password] != ""
+    create_user(params[:email], params[:password])
+    user = find_one_user_by_email( params[:email] )
+    session[:user_id] = user['id']
+    redirect '/loggedin'
+  else 
+    erb :signup
+  end
 end
 
 # # making public page 
