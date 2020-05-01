@@ -44,6 +44,14 @@ a:link {
     grid-template-columns: 1fr 1fr;
 }
 
+.login-btn{
+    background-color: #FF001E;
+}
+
+.signup-btn{
+    background-color: #03247A;
+}
+
 
 .red {
     background-color: #FF001E;
