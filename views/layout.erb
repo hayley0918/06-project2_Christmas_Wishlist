@@ -10,8 +10,11 @@
 <body>
   <div class="wrapper">
     <div class="container">
-      <a href="/"><h1 class = "app-title">Christmas Wishlist</h1></a>
-
+      <% if logged_in? %>
+        <a href="/loggedin"><h1 class = "app-title">Christmas Wishlist</h1></a>
+      <% else %>
+        <a href="/"><h1 class = "app-title">Christmas Wishlist</h1></a>
+      <% end %>
       <div class = "buttons">
         <% if logged_in? %>
           <form action="/items/new">
