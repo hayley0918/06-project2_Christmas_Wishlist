@@ -9,6 +9,8 @@ Create, Read, Update and Delete!
 
 Make your own Christmas wishlist 
 
+https://fast-ocean-73494.herokuapp.com/
+
 
 ![Christmas wishlist app main](public/images/crud_app_main.png)
 
@@ -36,6 +38,7 @@ after log in you can start posting the items you wish
 
 
 ### Project status
+-[ ] login problem in heroku
 
 Future feature: if you are ready to send it to Santa push the the Santa button
 
