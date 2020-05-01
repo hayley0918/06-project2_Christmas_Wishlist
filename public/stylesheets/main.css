@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+/* layout features */
 body{
     background: #F2F4F8;
     margin: 0;
@@ -29,13 +29,13 @@ a:link {
     text-decoration: none;
 }
 
- button {
+button {
     box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
     border-radius: 6px;
     padding: 8px 24px;
     color: white;
     text-align: center;
- }
+}
 
 .buttons{
     float: right; 
@@ -61,7 +61,7 @@ a:link {
     background-color: #03247A;
 }
 
-
+/* homepage features */
 .index{
     background-color: #fff;
     padding-bottom:24px;
@@ -98,6 +98,7 @@ footer div {
     font-size: 12px;
 }
 
+/* login features */
 .login{
     width: 300px;
     /*height: 350px;*/
@@ -140,6 +141,7 @@ footer div {
     display: grid;
 }
 
+/* mylist features */
 .mylist{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -155,6 +157,7 @@ h2, h3{
     color: #001F4D;
 }
 
+/* post new item features */
 .new .input{
     background-color: white;
     width: 300px;
@@ -199,6 +202,7 @@ h2, h3{
     height: 400px;
 }
 
+/* mylist features */
 .mylist img{
     width: 100px;
     height: 100px;
