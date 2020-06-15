@@ -1,12 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 /* layout features */
-body{
+body {
     background: #F2F4F8;
     margin: 0;
 }
+
 .wrapper {
     min-height: 100vh; /* will cover the 100% of viewport */
     overflow: hidden;
@@ -20,7 +22,7 @@ body{
     margin: 20px auto 0;
 }
 
-.app-title{
+.app-title {
     display: inline;
     color: #001F4D;
 }
@@ -37,21 +39,20 @@ button {
     text-align: center;
 }
 
-.buttons{
+.buttons {
     float: right; 
     margin-top: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.login-btn{
+.login-btn {
     background-color: #FF001E;
 }
 
-.signup-btn{
+.signup-btn {
     background-color: #03247A;
 }
-
 
 .red {
     background-color: #FF001E;
@@ -62,7 +63,7 @@ button {
 }
 
 /* homepage features */
-.index{
+.index {
     background-color: #fff;
     padding-bottom:24px;
     margin: 20px 0 0;
@@ -71,17 +72,17 @@ button {
     box-shadow: 0px 4px 20px rgba(0, 16, 101, 0.39);
 }
 
-.index .image img{
+.index .image img {
     width: 100%;
 }
 
-.index-text{
+.index-text {
     text-align: center;
     width: 68%;
     margin: 0 auto;
 }
 
-footer{
+footer {
     background-color:  #001F4D;
     text-align: left;
     color: white;
@@ -99,7 +100,7 @@ footer div {
 }
 
 /* login features */
-.login{
+.login {
     width: 300px;
     /*height: 350px;*/
     margin: 30px auto;
@@ -110,55 +111,54 @@ footer div {
     padding: 24px;
 }
 
-.login h3{
+.login h3 {
     padding:0 35px 35px; 
     text-align: center;
     border-bottom: solid 0.5px grey;
 }
 
-.login label{
+.login label {
     display: block;
     margin: 10px 0;
 }
 
-.login input{
+.login input {
     margin: 0;
     padding: 8px 4%;
     width: 100%;
     border-radius: 6px;
     border: 1px solid #C0C0C0;
-
 }
 
-.login button{
+.login button {
     display: block;
     width: 60%;
     margin: 20px auto;
     background-color: #FF001E;
 }
 
-.login form{
+.login form {
     display: grid;
 }
 
 /* mylist features */
-.mylist{
+.mylist {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     grid-gap: 15px;
 }
 
-.mylist form{
+.mylist form {
     display: inline;
 }
 
-h2, h3{
+h2, h3 {
     color: #001F4D;
 }
 
 /* post new item features */
-.new .input{
+.new .input {
     background-color: white;
     width: 300px;
     display: grid;
@@ -186,7 +186,7 @@ h2, h3{
     border: 1px solid #C0C0C0;
 }
 
-.new .input button{
+.new .input button {
     background-color: #03247A;
     color: white;
     border-radius: 10px;
@@ -197,33 +197,33 @@ h2, h3{
     margin-bottom: 8px;
 }
 
-.loggedin img{
+.loggedin img {
     width: 800px;
     height: 400px;
 }
 
 /* mylist features */
-.mylist img{
+.mylist img {
     width: 100px;
     height: 100px;
 }
 
-.mylist p{
+.mylist p {
     font-size: 13px;
 }
 
-
-.mylist button{
+.mylist button {
     color: black;
     border-radius: 0px;
     padding: 5px;
     box-shadow: none;
 }
 
-.mylist p{
+.mylist p {
     font-size: 20px;
     color: #001F4D;
 }
+
 .mylist .card p:nth-child(2) {
     margin-bottom:0;
 }
@@ -239,8 +239,7 @@ h2, h3{
     padding: 24px;
 }
 
-
-.edit{
+.edit {
     width: 400px;
 }
 

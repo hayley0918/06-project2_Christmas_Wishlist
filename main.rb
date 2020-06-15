@@ -13,11 +13,9 @@ get '/' do
   erb :index
 end
 
-
 get '/login' do
   erb :login
 end
-
 
 post '/login' do
   user = find_one_user_by_email( params[:email] )
@@ -31,8 +29,6 @@ post '/login' do
   end
 end
 
-
-
 get '/loggedin' do
   user = find_one_user_by_id(session[:user_id])
 
@@ -40,7 +36,6 @@ get '/loggedin' do
     user: user
   }
 end
-
 
 get '/mylist' do
   items = find_all_items_by_user_id(session[:user_id])
@@ -61,11 +56,9 @@ post '/mylist' do
   redirect '/mylist'
 end
 
-
 get '/items/new' do
   erb :new
 end
-
 
 delete '/items' do
   delete_item(params[:id])
@@ -73,13 +66,11 @@ delete '/items' do
   redirect "/mylist"
 end
 
-
 get '/items/:id/edit' do
   item = find_one_item_by_id(params[:id])
 
   erb :edit, locals: { item: item }
 end
-
 
 patch '/items' do
   update_item(
@@ -92,12 +83,10 @@ patch '/items' do
   redirect "/mylist"  
 end
 
-
 delete '/logout' do
   session[:user_id] = nil
   redirect "/"
 end
-
 
 get '/signup' do 
   erb :signup
@@ -114,16 +103,3 @@ post '/signup' do
   end
 end
 
-# # making public page 
-# get '/mylist/:id/public' do 
-#   user = find_one_user_by_id(params[:id])
-#   items = find_all_items_by_user_id(params[:id])
-
-#   # guard 
-#   if user["public"] 
-#     erb :mylist, locals:{items: items, user: user}
-#   else
-#     redirect '/'
-#   end
- 
-# end

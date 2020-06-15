@@ -11,36 +11,31 @@
   <div class="wrapper">
     <div class="container">
       <% if logged_in? %>
-        <a href="/loggedin"><h1 class = "app-title">Christmas Wishlist</h1></a>
+        <a href="/loggedin"><h1 class="app-title">Christmas Wishlist</h1></a>
       <% else %>
-        <a href="/"><h1 class = "app-title">Christmas Wishlist</h1></a>
+        <a href="/"><h1 class="app-title">Christmas Wishlist</h1></a>
       <% end %>
-      <div class = "buttons">
+      <div class="buttons">
         <% if logged_in? %>
           <form action="/items/new">
             <button class="login-btn">post</button>
           </form>
           <form action="/logout" method="post">
             <input type="hidden" name="_method" value="delete">
-            <button class = "logout-btn blue">logout</button>
+            <button class="logout-btn blue">logout</button>
           </form>
         <% else %>
-          <form action = "/login" method = "get">
-            <button class = "login-btn">login</button>
+          <form action="/login" method="get">
+            <button class="login-btn">login</button>
           </form>
-          <form action="/signup" method = "get">
-            <button class = "signup-btn">sign up</button>
+          <form action="/signup" method="get">
+            <button class="signup-btn">sign up</button>
           </form>
-      <% end %>
-
+        <% end %>
       </div>
-
       <%= yield %>
     </div>
-
     <footer><div>&copy; Hayley 2020 CRUD App project</div></footer>
   </div>
-
- 
 </body>
 </html>
