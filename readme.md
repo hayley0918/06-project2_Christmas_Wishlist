@@ -6,6 +6,9 @@ Create, Read, Update and Delete!
 
 ## Christmas Wishlist
 
+To try the app
+email: hayley@ga.co
+password: pudding
 
 Make your own Christmas wishlist 
 
